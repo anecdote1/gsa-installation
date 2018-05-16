@@ -1,0 +1,32 @@
+{
+  "name": "Alerts",
+  "version": "1.0.0",
+  "description": "FB Installation",
+  "main": "index.html",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "sourceMap": true,
+          "presets": [
+            "es2015",
+            "react",
+            "env"
+          ],
+          "plugins": [
+            "transform-strict-mode"
+          ]
+        }
+      ]
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "html-pdf": "^2.2.0",
+    "shelljs": "^0.8.2"
+  }
+}
